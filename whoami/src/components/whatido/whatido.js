@@ -5,10 +5,14 @@ class WhatIDo extends Component {
         super(props);
     }
 
+    componentDidMount() {
+
+    }
+
     render() {
         return (
             <div>
-                Hello
+                What I Do
             </div>
         );
     }

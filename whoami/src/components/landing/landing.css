@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+* {
+    font-family: 'Cabin', sans-serif;
+    overflow-x: hidden;
+}
+
+.pseudo-header {
+    height: 15vh;
+}
+
+.name {
+    height: 70vh;
+}
+
+.center > h2 {
+    margin-top: -50px;
+    font-size: 10rem;
+    background-color: #2f187aa2;
+}
+
+p {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 5px;
+    background-color: #2f187ac7;
+}
+
+.center {
+    color: #F2F0F9;
+    margin: auto;
+}
+
+.human {
+    margin-top: -75px;
+}
+
+p:hover {
+    animation: scale 2s;
+}
+
+h2:hover {
+    animation: scale 2s;
+}
+
+.more-down {
+    height: 15vh;
+}
+
+.more-down > span {
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 40px;
+    transform: rotate(45deg);
+    border-bottom: #F2F0F9 solid 2px;
+    border-right: #F2F0F9 solid 2px;
+    border-radius: 3px;
+    animation: arrow 2s infinite;
+}
+
+.more-down > span:hover {
+    border-bottom: #F2F0F9 solid 4px;
+    border-right: #F2F0F9 solid 4px;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-10px, -10px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0.99);
+    }
+    25% {
+        transform: scale(0.98);
+    }
+    50% {
+        transform: scale(0.97);
+    }
+    75% {
+        transform: scale(0.98);
+    }
+    100% {
+        transform: scale(0.99);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    p {
+        background-color: transparent;
+    }
+    #iam {
+        display: block;
+    }
+    .center > h2 {
+        line-height: 70px;
+        padding-bottom: 10px;
+        font-size: 5em;
+        text-align: center;
+    }
+    .row {
+        text-align: center;
+    }
+}
+/* #3C2097 */
