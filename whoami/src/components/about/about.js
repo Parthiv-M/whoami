@@ -5,6 +5,7 @@ import './about.css';
 const halfmoon = require("halfmoon");
 
 class About extends Component {
+
     constructor(props) {
         super(props);
     }
@@ -15,10 +16,8 @@ class About extends Component {
 
     render() {
         return (
-            <div>
-                <div className="wrapper">
-                    About
-                </div>
+            <div className="white-wrapper">
+                About
             </div>
         );
     }

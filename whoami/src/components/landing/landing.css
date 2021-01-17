@@ -2,11 +2,6 @@
 
 * {
     font-family: 'Cabin', sans-serif;
-    overflow-x: hidden;
-}
-
-.pseudo-header {
-    height: 15vh;
 }
 
 .name {

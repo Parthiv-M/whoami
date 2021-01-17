@@ -6,19 +6,20 @@ const halfmoon = require("halfmoon");
 
 class Landing extends Component {
 
+    constructor(props) {
+        super(props);
+    }
+
     componentDidMount() {
-        document.title = "Parthiv Menon | Home";
+        document.title = "Parthiv Menon";
         halfmoon.onDOMContentLoaded();
     }
 
     render() {
         return (
-            <div>
-                <div className="wrapper container-fluid">
-                    <div className="row pseudo-header">
-
-                    </div>
-                    <div className="row name">
+            <div className="color-wrapper">
+                <div className="container-fluid">
+                    <div className="row name mt-20">
                         <div className="center">
                             <div className="row justify-content-start" id="iam">
                                 <p>I am</p>
