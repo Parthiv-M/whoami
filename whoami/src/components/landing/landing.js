@@ -17,18 +17,17 @@ class Landing extends Component {
 
     render() {
         return (
-            <div className="color-wrapper">
-                <div className="container-fluid">
+                <div className="container-fluid mt-20 pb-20">
                     <div className="row name mt-20">
                         <div className="center">
                             <div className="row justify-content-start" id="iam">
-                                <p>I am</p>
+                                <p className="p-15">I am</p>
                             </div>
-                            <h2>
+                            <h2 className="pl-15 pr-15">
                                 Parthiv Menon,
                             </h2>
                             <div className="row human justify-content-end">
-                                <p>professionally human</p>
+                                <p className="p-15">professionally human</p>
                             </div>
                         </div> 
                     </div>
@@ -36,7 +35,6 @@ class Landing extends Component {
                         <span></span>
                     </div>
                 </div>
-            </div>
         );
     }
 }

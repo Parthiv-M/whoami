@@ -9,13 +9,14 @@
 }
 
 .center > h2 {
+    border-radius: 10px;
     margin-top: -50px;
     font-size: 10rem;
     background-color: #2f187aa2;
 }
 
 p {
-    padding: 20px;
+    border-radius: 10px;
     font-weight: bold;
     font-size: 30px;
     letter-spacing: 5px;
@@ -32,11 +33,11 @@ p {
 }
 
 p:hover {
-    animation: scale 2s;
+    animation: scale 2s infinite;
 }
 
 h2:hover {
-    animation: scale 2s;
+    animation: scale 2s infinite;
 }
 
 .more-down {
