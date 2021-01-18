@@ -15,7 +15,7 @@
     background-color: #2f187aa2;
 }
 
-p {
+.border-text {
     border-radius: 10px;
     font-weight: bold;
     font-size: 30px;
@@ -32,11 +32,11 @@ p {
     margin-top: -75px;
 }
 
-p:hover {
+.border-text:hover {
     animation: scale 2s infinite;
 }
 
-h2:hover {
+.center > h2:hover {
     animation: scale 2s infinite;
 }
 
@@ -94,7 +94,7 @@ h2:hover {
 }
 
 @media only screen and (max-width: 600px){
-    p {
+    .border-text {
         background-color: transparent;
     }
     #iam {

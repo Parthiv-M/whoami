@@ -21,13 +21,13 @@ class Landing extends Component {
                     <div className="row name mt-20">
                         <div className="center">
                             <div className="row justify-content-start" id="iam">
-                                <p className="p-15">I am</p>
+                                <p className="p-15 border-text">I am</p>
                             </div>
                             <h2 className="pl-15 pr-15">
                                 Parthiv Menon,
                             </h2>
                             <div className="row human justify-content-end">
-                                <p className="p-15">professionally human</p>
+                                <p className="p-15 border-text">professionally human</p>
                             </div>
                         </div> 
                     </div>
