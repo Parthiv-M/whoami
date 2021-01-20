@@ -1,19 +1,7 @@
 import React, { Component } from 'react';
 import './../App.css';
 import './landing.css';
-
-const halfmoon = require("halfmoon");
-
 class Landing extends Component {
-
-    constructor(props) {
-        super(props);
-    }
-
-    componentDidMount() {
-        halfmoon.onDOMContentLoaded();
-    }
-
     render() {
         return (
                 <div className="container-fluid mt-20 pb-20">

@@ -54,7 +54,6 @@ body {
 }
 
 .white-wrapper {
-    height: 100vh;
     width: 100vw;
     overflow-x: hidden;
     background-color: #F2F0F9;

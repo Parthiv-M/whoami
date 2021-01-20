@@ -3,6 +3,7 @@ import Landing from './landing/landing';
 import About from './about/about';
 import  ParticlesBackground  from './particles';
 import WhatIDo from './whatido/whatido';
+import Contact from './contact/contact';
 
 require("halfmoon/css/halfmoon-variables.min.css");
 const halfmoon = require("halfmoon");
@@ -38,6 +39,7 @@ class App extends Component {
                       <About />
                     </div>
                     <WhatIDo/>
+                    <Contact/>
                   </div>
                 </div>
                 <ParticlesBackground/>
