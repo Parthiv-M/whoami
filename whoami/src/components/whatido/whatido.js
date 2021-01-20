@@ -11,8 +11,10 @@ class WhatIDo extends Component {
 
     render() {
         return (
-            <div>
-                What I Do
+            <div className="white-wrapper">
+                <div>
+                    
+                </div>
             </div>
         );
     }

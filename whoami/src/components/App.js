@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Landing from './landing/landing';
 import About from './about/about';
 import  ParticlesBackground  from './particles';
+import WhatIDo from './whatido/whatido';
 
 require("halfmoon/css/halfmoon-variables.min.css");
 const halfmoon = require("halfmoon");
@@ -9,6 +10,7 @@ const halfmoon = require("halfmoon");
 class App extends Component {
 
     componentDidMount() {
+      document.title = "Parthiv Menon"
       halfmoon.onDOMContentLoaded();
     }
 
@@ -35,6 +37,7 @@ class App extends Component {
                     <div id="about">
                       <About />
                     </div>
+                    <WhatIDo/>
                   </div>
                 </div>
                 <ParticlesBackground/>

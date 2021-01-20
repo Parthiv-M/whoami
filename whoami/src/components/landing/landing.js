@@ -11,7 +11,6 @@ class Landing extends Component {
     }
 
     componentDidMount() {
-        document.title = "Parthiv Menon";
         halfmoon.onDOMContentLoaded();
     }
 
