@@ -10,6 +10,10 @@ const WhatIDo = new Schema({
         type: String,
         required: true
     },
+    description: {
+        type: String,
+        required: true
+    },
     link: {
         type: String,
         required: false
@@ -17,6 +21,11 @@ const WhatIDo = new Schema({
     imageUrl: {
         type: String,
         required: true 
+    },
+    tags: {
+        type: [{
+            type: String
+        }]
     }
 });
 

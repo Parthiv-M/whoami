@@ -9,6 +9,11 @@ body {
     overflow-x: hidden;
 }
 
+::selection {
+    color: #F2F0F9;
+    background-color: #3c2097;
+}
+
 .navbar {
     overflow: hidden;
 }
