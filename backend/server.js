@@ -2,7 +2,7 @@ const path = require("path");
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const connectDB = require('./config/database/database');
+const connectDB = require('./config/database');
 
 connectDB();
 
@@ -16,7 +16,7 @@ app.get('/', (req, res, next) => {
     res.sendFile(path.join(__dirname, '../' +'/whoami/public/index.html'));
 });
 
-app.use('/api/whatido', require("./config/routes/api/whatido"));
+app.use('/api/whatido', require("./routes/api/whatido"));
 
 app.listen(port, () => {
     console.log(`Server is up on port ${port}!`);

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const WhatIDo  =  require("./../../models/whatido");
+const WhatIDo  =  require('./../../models/whatido');
 
 router.get('/posts', async(req, res) => {
     try {
