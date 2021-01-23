@@ -6,23 +6,31 @@
 }
 
 #about-card:hover{
-    animation: about-scale 1s;
+    -webkit-animation: about-scale 1s;
+            animation: about-scale 1s;
 }
+
 
 @keyframes about-scale {
     0%{
-        transform: scale(1.005);
+        -webkit-transform: scale(1.005);
+                transform: scale(1.005);
     }
     25% {
-        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+                transform: scale(1.01);
     }
     50% {
-        transform: scale(1.012);
+        -webkit-transform: scale(1.012);
+                transform: scale(1.012);
     }
     75% {
-        transform: scale(1.01);
+        -webkit-transform: scale(1.01);
+                transform: scale(1.01);
     }
     100% {
-        transform: scale(1.005);
+        -webkit-transform: scale(1.005);
+                transform: scale(1.005);
     }
 }
+

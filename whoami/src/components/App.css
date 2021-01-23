@@ -9,6 +9,11 @@ body {
     overflow-x: hidden;
 }
 
+::-moz-selection {
+    color: #F2F0F9;
+    background-color: #3c2097;
+}
+
 ::selection {
     color: #F2F0F9;
     background-color: #3c2097;
@@ -36,23 +41,28 @@ body {
 }
 
 .my-link:hover {
-    animation: border 800ms;
-    animation-fill-mode: forwards;
+    -webkit-animation: border 800ms;
+            animation: border 800ms;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
     border-radius: 2px;
     font-weight: bold;
 }
 
 @keyframes border {
     0% {    
-        opacity: 0%;
+        opacity: 0%;    
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=NaN)";
         border-bottom: 3px #F2F0F9 solid;
     }
     50% {
         opacity: 50%;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=NaN)";
         border-bottom: 3px #F2F0F9 solid;
     } 
     100% {
         opacity: 100%;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=NaN)";
         border-bottom: 3px #F2F0F9 solid;
     }
 }

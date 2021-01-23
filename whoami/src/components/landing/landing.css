@@ -33,11 +33,13 @@
 }
 
 .border-text:hover {
-    animation: scale 2s infinite;
+    -webkit-animation: scale 2s infinite;
+            animation: scale 2s infinite;
 }
 
 .center > h2:hover {
-    animation: scale 2s infinite;
+    -webkit-animation: scale 2s infinite;
+            animation: scale 2s infinite;
 }
 
 .more-down {
@@ -49,11 +51,13 @@
     margin: auto;
     height: 40px;
     width: 40px;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
     border-bottom: #F2F0F9 solid 2px;
     border-right: #F2F0F9 solid 2px;
     border-radius: 3px;
-    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+            animation: arrow 2s infinite;
 }
 
 .more-down > span:hover {
@@ -64,32 +68,42 @@
 @keyframes arrow {
     0% {
         opacity: 0;
-        transform: rotate(45deg) translate(-10px, -10px);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transform: rotate(45deg) translate(-10px, -10px);
+                transform: rotate(45deg) translate(-10px, -10px);
     }
     50% {
         opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     }
     100% {
         opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transform: rotate(45deg) translate(20px,20px);
+                transform: rotate(45deg) translate(20px,20px);
     }
 }
 
 @keyframes scale {
     0% {
-        transform: scale(0.99);
+        -webkit-transform: scale(0.99);
+                transform: scale(0.99);
     }
     25% {
-        transform: scale(0.98);
+        -webkit-transform: scale(0.98);
+                transform: scale(0.98);
     }
     50% {
-        transform: scale(0.97);
+        -webkit-transform: scale(0.97);
+                transform: scale(0.97);
     }
     75% {
-        transform: scale(0.98);
+        -webkit-transform: scale(0.98);
+                transform: scale(0.98);
     }
     100% {
-        transform: scale(0.99);
+        -webkit-transform: scale(0.99);
+                transform: scale(0.99);
     }
 }
 
