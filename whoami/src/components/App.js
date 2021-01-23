@@ -26,10 +26,10 @@ class App extends Component {
                           <a href="#about" class="nav-link my-link pl-15" style={{color:"#F2F0F9"}}>About Me</a>
                         </li>
                         <li class="nav-item">
-                          <a href="/#" class="nav-link my-link" style={{color:"#F2F0F9"}}>What I Do</a>
+                          <a href="#whatido" class="nav-link my-link" style={{color:"#F2F0F9"}}>What I Do</a>
                         </li>
                         <li class="nav-item">
-                          <a href="/#" class="nav-link my-link pr-15" style={{color:"#F2F0F9"}}>Say Hello</a>
+                          <a href="#contact" class="nav-link my-link pr-15" style={{color:"#F2F0F9"}}>Say Hello</a>
                         </li>
                     </ul>
                   </nav>                  

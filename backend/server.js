@@ -18,6 +18,8 @@ app.get('/', (req, res, next) => {
 
 app.use('/api/whatido', require("./routes/api/whatido"));
 
+app.use('/api/whatido', require("./routes/api/contact"));
+
 app.listen(port, () => {
     console.log(`Server is up on port ${port}!`);
 });
