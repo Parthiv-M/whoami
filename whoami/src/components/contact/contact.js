@@ -43,11 +43,15 @@ class Contact extends Component {
         const size = 45;
         const iconList = [ 
             <GitHub size={size} color={color}/>, 
-            <AtSign size={size} color={color}/>, 
+            // <AtSign size={size} color={color}/>, 
             <Instagram size={size} color={color}/>, 
             <Linkedin size={size} color={color}/> 
         ];
         return iconList[index];
+    }
+
+    getLink(card, index) {
+        return card.link;
     }
 
     render() {
@@ -59,7 +63,7 @@ class Contact extends Component {
                         {
                             data.map((card, index) => {
                                 return (
-                                    <a className="d-block" style={{textDecoration:"none"}} href={card.link}  target="_blank" rel="noreferrer">
+                                    <a className="d-block" style={{textDecoration:"none"}} href={this.getLink(card, index)} target="_blank" rel="noreferrer">
                                     <div class="h-150 w-150 card bg-very-dark border-0 overflow-hidden text-center" style={{cursor:"pointer"}} onMouseEnter={() => this.onHover(index)} onMouseLeave={() => this.noHover(index)}>                      
                                         <span className="align-middle logo">
                                         <React.Fragment>

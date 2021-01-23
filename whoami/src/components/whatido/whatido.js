@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import arrayShuffle from 'array-shuffle';
 import { ExternalLink } from 'react-feather';
-import Flip from 'react-reveal';
+import Pulse from 'react-reveal/Pulse';
 
 class WhatIDo extends Component {
 
@@ -40,7 +40,7 @@ class WhatIDo extends Component {
                         data.map((post) => {
                             const {name, domain, link, imageUrl, description, tags} = post;
                             return (
-                                <Flip right>
+                                <Pulse>
                                 <div key={name} className="card w-350 h-450 p-0 border-0 bg-transparent overflow-hidden" id="card">
                                     <img src={imageUrl} alt="my" className="w-350 h-200 img-fluid rounded-top"/>
                                     <div className="px-card">
@@ -72,7 +72,7 @@ class WhatIDo extends Component {
                                         }
                                     </div>
                                 </div>
-                                </Flip>
+                                </Pulse>
                             );
                         })
                     }

@@ -14,6 +14,19 @@ body {
     background-color: #3c2097;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #24135a;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar:hover{
+    width: 7px;
+}
+
 .navbar {
     overflow: hidden;
 }

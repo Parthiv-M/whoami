@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import './../App.css';
 import './about.css';
+import Fade from 'react-reveal/Fade'
 class About extends Component {
     render() {
         return (
             <div className="content">
-                <div className="content-title font-weight-bold" style={{color:"#3c2097"}}>
-                    About Me
-                </div>
+              <Fade cascade top>
                 <div className="card p-20 shadow border-0" id="about-card">
                     <h2 className="card-title" style={{color:"#3c2097f1"}}>
                       Who am I ?
@@ -44,6 +43,7 @@ class About extends Component {
                       key into the ignition, turned it and the engine didn't make a sound.
                     </p>
                 </div>
+                </Fade>
             </div>
         );
     }
