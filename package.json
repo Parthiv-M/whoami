@@ -8,7 +8,7 @@
     "server": "cd backend && yarn start",
     "client": "cd whoami && yarn start",
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "nodemon && yarn server && cd whoami && yarn && yarn run build"
+    "heroku-postbuild": "npm i nodemon && yarn server && cd whoami && yarn && yarn run build"
   },
   "repository": {
     "type": "git",
