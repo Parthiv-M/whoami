@@ -10,10 +10,10 @@ const port = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json({ extended: false }));
-app.use(express.static(path.join(__dirname, 'whoami/public')));
+app.use(express.static(path.join(__dirname, 'whoami/build')));
 
 app.get('/', (req, res, next) => {
-    res.sendFile(path.join(__dirname, '../' +'/whoami/public/index.html'));
+    res.sendFile(path.join(__dirname, '../' +'/whoami/build/index.html'));
 });
 
 app.use('/api/whatido', require("./routes/api/whatido"));
