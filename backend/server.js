@@ -12,6 +12,10 @@ app.use(cors());
 app.use(express.json({ extended: false }));
 app.use(express.static(path.join(__dirname, 'whoami/build')));
 
+// app.use('/', (req, res) => {
+//     res.sendFile()
+// });
+
 app.use('/api/whatido', require("./routes/api/whatido"));
 
 app.use('/api/whatido', require("./routes/api/contact"));
