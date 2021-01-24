@@ -10,8 +10,7 @@ const port = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json({ extended: false }));
-app.use(express.static(path.join(__dirname, 'whoami/build')));
-
+app.use(express.static(path.join(__dirname, '../whoami' + '/build')));
 // app.use('/', (req, res) => {
 //     res.sendFile()
 // });
