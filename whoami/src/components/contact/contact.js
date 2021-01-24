@@ -11,7 +11,7 @@ class Contact extends Component {
     };
 
     getData() {
-        fetch('http://localhost:3001/api/whatido/contact')
+        fetch('http://parthivmenon.herokuapp.com/api/whatido/contact')
             .then(res => res.json())
             .then( data => {
                 console.log(data);
