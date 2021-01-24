@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const nconf = require('nconf');
 
-nconf.argv().env().file({file: './config/config.json'});
+nconf.argv().env().file({file: 'config/config.json'});
 
 const connectDB = async () => {
     try {
