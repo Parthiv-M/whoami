@@ -20,6 +20,10 @@ app.use('/api/whatido', require("./routes/api/whatido"));
 
 app.use('/api/whatido', require("./routes/api/contact"));
 
+app.get('*', (req, res) => {
+    res.send({message: "Smart, but not smart enough"});
+})
+
 app.listen(port, () => {
     console.log(`Server is up on port ${port}!`);
 });
