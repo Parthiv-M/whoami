@@ -22,5 +22,8 @@
   "homepage": "https://github.com/Parthiv-M/whoami#readme",
   "dependencies": {
     "concurrently": "^5.3.0"
-  }
+  },
+  "engines": {
+    "node": "12.18.0"
+}
 }
