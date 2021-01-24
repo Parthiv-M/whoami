@@ -11,7 +11,7 @@ class WhatIDo extends Component {
     };
 
     getData() {
-        fetch('http://parthivmenon.herokuapp.com/api/whatido/posts')
+        fetch('/api/whatido/posts')
             .then(res => res.json())
             .then( data => {
                     console.log(data);
