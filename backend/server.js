@@ -3,24 +3,33 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const connectDB = require('./config/database');
+const nconf = require('nconf');
 
 connectDB();
+nconf.argv().env();
 
 const port = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json({ extended: false }));
-app.use(express.static(path.join(__dirname, '../whoami' + '/build')));
-// app.use('/', (req, res) => {
-//     res.sendFile()
-// });
+
+if(nconf.get('NODE_ENV') === "dev"){
+    app.use(express.static(path.join(__dirname, '../whoami' + '/public')));
+} else {
+    app.use(express.static(path.join(__dirname, '../whoami' + '/build')));
+}
 
 app.use('/api/whatido', require("./routes/api/whatido"));
 
 app.use('/api/whatido', require("./routes/api/contact"));
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../' +'/whoami/build/index.html'));
+    if(nconf.get('NODE_ENV') === "dev"){
+        res.sendFile(path.join(__dirname, '../' +'/whoami/public/index.html'));
+    } else {
+        res.sendFile(path.join(__dirname, '../' +'/whoami/build/index.html'));
+    }
+
 })
 
 app.listen(port, () => {
