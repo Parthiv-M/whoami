@@ -9,19 +9,19 @@ class ParticlesBackground extends Component {
               params={{
                 particles: {
                   number: {
-                    value: 125,
+                    value: 80,
                     density: {
                       enable: true,
-                      value_area: 1000
+                      value_area: 900
                     }
                   },
                   color: {
-                    value: "#1b0b4d"
+                    value: "#F2F0F9"
                   },
                   shape: {
-                    type: "circle",
+                    type: "square",
                     stroke: {
-                      width: 0,
+                      width: 2,
                       color: "#8072a8"
                     },
                   },
@@ -36,20 +36,21 @@ class ParticlesBackground extends Component {
                     }
                   },
                   size: {
-                    value: 4,
+                    value: 5,
                     random: true,
                     anim: {
                       enable: true,
-                      speed: 2,
+                      speed: 10,
+                      out_mode: "out",
                       size_min: 0.1,
                       sync: false
                     }
                   },
                   line_linked: {
                     enable_auto: true,
-                    distance: 100,
+                    distance: 150,
                     color: "#150740",
-                    opacity: 0.75,
+                    opacity: 0.1,
                     width: 1,
                     condensed_mode: {
                       enable: false,
@@ -59,7 +60,7 @@ class ParticlesBackground extends Component {
                   },
                   move: {
                     enable: true,
-                    speed: 1,
+                    speed: 6,
                     direction: "none",
                     random: true,
                     straight: true,
@@ -73,16 +74,18 @@ class ParticlesBackground extends Component {
                   }
                 },
                 interactivity: {
-                  detect_on: "canvas",
+                  detect_on: "window",
                   events: {
-                    onhover: {
-                      enable: true
+                     onhover: {
+                      enable: true,
+                      mode: "repulse"
                     },
                     onclick: {
-                      enable: true
+                      enable: true,
+                      mode: "push"
                     },
                     resize: true
-                  }
+                  },
                 },
                 retina_detect: true
               }}

@@ -5,9 +5,9 @@ import Fade from 'react-reveal/Fade'
 class About extends Component {
     render() {
         return (
-            <div className="content">
+            <div className="content overflow-hidden">
               <Fade cascade top>
-                <div className="card p-20 shadow border-0" id="about-card">
+                <div className="p-20 border-0" id="about-card">
                     <h2 className="card-title" style={{color:"#3c2097f1"}}>
                       Who am I ?
                     </h2>
@@ -19,7 +19,7 @@ class About extends Component {
                       the destination. 
                     </p>
                 </div>
-                <div className="card p-20 shadow border-0" id="about-card">
+                <div className="p-20 border-0" id="about-card">
                     <h2 className="card-title" style={{color:"#3c2097f1"}}>
                       Academics
                     </h2>
@@ -31,7 +31,7 @@ class About extends Component {
                       I obtained a CGPA of 9.45 (9.27 and 9.65 in the first two semesters, respectively) in first year which was disrupted by the now infamous pandemic.
                     </p>
                 </div>
-                <div className="card p-20 shadow border-0" id="about-card">
+                <div className="p-20   border-0" id="about-card">
                     <h2 className="card-title" style={{color:"#3c2097f1"}}>
                       What else?
                     </h2>

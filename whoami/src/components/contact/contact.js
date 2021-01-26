@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Instagram, AtSign, GitHub, Linkedin } from 'react-feather';
+import { Instagram, GitHub, Linkedin } from 'react-feather';
 import Fade from 'react-reveal';
 
 class Contact extends Component {
@@ -43,7 +43,6 @@ class Contact extends Component {
         const size = 45;
         const iconList = [ 
             <GitHub size={size} color={color}/>, 
-            // <AtSign size={size} color={color}/>, 
             <Instagram size={size} color={color}/>, 
             <Linkedin size={size} color={color}/> 
         ];
