@@ -29,8 +29,7 @@ app.get('*', (req, res) => {
     } else {
         res.sendFile(path.join(__dirname, '../' +'/whoami/build/index.html'));
     }
-
-})
+});
 
 app.listen(port, () => {
     console.log(`Server is up on port ${port}!`);

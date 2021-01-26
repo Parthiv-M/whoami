@@ -41,13 +41,13 @@ class WhatIDo extends Component {
                             const {name, domain, link, imageUrl, description, tags} = post;
                             return (
                                 <Pulse>
-                                <div key={name} className="card w-350 h-450 p-0 border-0 bg-transparent overflow-hidden" id="card">
+                                <div key={name} className="card w-md-350 w-250 h-md-450 p-0 border-0 bg-transparent overflow-hidden" id="card">
                                     <img src={imageUrl} alt="my" className="w-350 h-200 img-fluid rounded-top"/>
                                     <div className="px-card">
                                         <h3 className="content-title text-center font-weight-bold text-md-left mt-10" id="title" style={{color: "#3c2097", letterSpacing: "2px"}}>
                                             {name}
                                         </h3>
-                                        <p className="h-100 text-justify text-muted">
+                                        <p className="h-md-100 text-justify text-muted">
                                             {description} 
                                         </p>
                                     </div>
