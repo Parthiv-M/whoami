@@ -35,9 +35,7 @@ class App extends Component {
                   </nav>                  
                   <div>
                     <Landing />
-                    <div id="about">
-                      <About />
-                    </div>
+                    <About />
                     <WhatIDo/>
                     <Contact/>
                   </div>
