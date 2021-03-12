@@ -24,10 +24,10 @@ class About extends Component {
                       Academics
                     </h2>
                     <p className="text-justify text-muted">
-                      I spent the best 14 years of my life in <span><a href="http://bloomingbudsbethania.in/" target="_blank" rel="noreferrer" style={{textDecoration:"none", color:"#A197C4"}}>Blooming Buds Bethania English School</a></span>, one of the best schools in our area. I finished 
+                      I spent a blissful 14 years of my life in <span><a href="http://bloomingbudsbethania.in/" target="_blank" rel="noreferrer" style={{textDecoration:"none", color:"#A197C4"}}>Blooming Buds Bethania English School</a></span>. I finished 
                       Standard 10 with a GPA of 10, and chose to continue in the Science stream in the same school, taking entrance classes alongside—just 
                       a quintessential Indian kid and his not-so-insignificant life. Scoring 97% in the Board exams in Standard 12 made me one of the school toppers, and the Thrissur district topper for Science stream.
-                      Taking into consideration all the entrance examinatoin results, I finally joined <span><a href="https://manipal.edu/mit.html" target="_blank" rel="noreferrer" style={{textDecoration:"none", color:"#A197C4"}}>Manipal Institute of Technology, Manipal</a></span>, as a CSE student.
+                      I finally joined <span><a href="https://manipal.edu/mit.html" target="_blank" rel="noreferrer" style={{textDecoration:"none", color:"#A197C4"}}>Manipal Institute of Technology, Manipal</a></span>, as a CSE student.
                       I obtained a CGPA of 9.45 in first year, which was disrupted by the now infamous pandemic.
                     </p>
                 </div>
