@@ -1,0 +1,204 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* customising halfmoon colours */
+:root {
+    --primary-color: #3c2097;
+    --contrast-color: #F2F0F9; 
+}
+
+/* customising base page */
+
+::-moz-selection {
+    color: #F2F0F9;
+    background-color: var(--primary-color);
+}
+
+::selection {
+    color: #F2F0F9;
+    background-color: var(--primary-color);
+}
+
+.back-image {
+    background-image: url('./assets/back-svg.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.795);
+}
+
+/* back-image of me */
+
+.image-of-me {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./assets/parthiv.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -999;
+    filter: grayscale(100%) blur(15px) opacity(0.7);
+}
+
+@media only screen and (max-width: 800px) {
+    .image-of-me {
+        display: none;
+    }
+}
+
+/* skill coin styles */
+
+.skill-coin:hover {
+    animation: rotate 2000ms ease-in-out;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* social link styles */
+
+.social-link {
+    color: #1b1b1b;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+    color: var(--primary-color);
+}
+
+/* about padding */
+
+.about-padding {
+    padding: 2rem 10rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .about-padding{
+        padding: 1rem 4rem;
+    }
+}
+
+/* others card */
+
+.and-others{
+    opacity: 0.7;
+}
+
+.and-others:hover{
+    opacity: 1;
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 15px rgba(49, 49, 49, 0.288);
+}
+
+@media only screen and (max-width: 800px){
+    .and-others{
+        opacity: 1;
+    }
+    .and-others:hover{
+        box-shadow: none;
+    }
+}
+
+/* dark love styles */
+
+.dark-love {
+    background-color: #161618;
+}
+
+.glass-button {
+    border: none;
+    color: var(--contrast-color);
+    background-image: linear-gradient(to right, #3c2097d3, var(--primary-color), var(--primary-color), var(--primary-color), #3c2097d3);
+}
+
+.glass-button:hover {
+    background-color: var(--primary-color);
+}
+
+.glass-button span a {
+    color: var(--contrast-color);
+    text-decoration: none;
+}
+
+.my-shadow {
+    position: relative;
+    border-top: 4px solid rgba(255, 255, 255, 0.795);
+    box-shadow: 0 0 25px 0 rgba(50,50,50,.3) inset;
+}
+  
+.my-shadow:after {
+  content: '';
+  position: relative;
+}
+
+.curved-shadow:after {
+    position: relative;
+    z-index: -2;
+}
+
+.curved-shadow:after {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    right: 12px;
+    bottom: 0;
+    box-shadow: 0 0px 15px 10px rgba(100,100,100,0.5);
+    border-radius: 450px / 15px;
+}
+
+@media only screen and (max-width: 280px){
+    .tags-div {
+        width: 120%;
+    }
+}
+
+/* extras styles */
+
+#extra-bottom{
+    border-top: 1px solid var(--primary-color);
+    font-size: 1.9rem;
+    font-weight: bolder;
+    background-color: #3c20978e;
+    border-radius: 10px;
+}
+
+#extra-bottom p a{
+    color: var(--contrast-color);
+}
+
+#extra-bottom p:hover{
+    transition-duration: 800ms;
+    transform: translateY(-5px);
+}
+
+/* footer styles */
+
+.grad-back {
+    background-image: linear-gradient(to right, rgba(214, 214, 214, 0.9), rgb(247, 247, 247), rgb(247, 247, 247), rgb(228, 228, 228, 0.9));
+}
+
