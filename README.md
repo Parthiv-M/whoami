@@ -1,6 +1,6 @@
 ## whoami
 
-I am Parthiv Menon. To know more about me and about what I do, check out my website [here](https://parthiv-m.github.io/whoami/#/)
+I am Parthiv Menon. To know more about me and about what I do, check out my website [here](https://parthivmenon.com)
 
 ### Tech Stack
 
