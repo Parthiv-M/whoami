@@ -1,7 +1,6 @@
 {
   "name": "whoami",
   "version": "0.1.0",
-  "homepage": "https://Parthiv-M.github.io/whoami",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
