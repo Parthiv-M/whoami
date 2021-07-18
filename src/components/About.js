@@ -76,7 +76,7 @@ const About = () =>  {
                     {
                         skillsAndMore.map((more, index) => {
                             return (
-                                <div className='h-md-full col-md-3 d-flex align-items-center justify-content-center'>
+                                <div key={index} className='h-md-full col-md-3 d-flex align-items-center justify-content-center'>
                                     <Fade>
                                     <div style={{ height: '6rem', width: '6rem' }}>
                                             <CircularProgressbar className='skill-coin' value={more.percent} text={more.name} styles={buildStyles({
