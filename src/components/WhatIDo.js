@@ -3,7 +3,7 @@ import { ToggleRight } from 'react-feather';
 import {Button} from 'reacthalfmoon';
 import Extras from './Extras';
 import eCell from '../assets/eCellImage.png';
-import news from '../assets/newsAPI.png';
+import newsletter from '../assets/newsletter.png';
 import MIST from '../assets/MISTLogo.png';
 import startup from '../assets/startupImage.png';
 import research from '../assets/researchImage.png';
@@ -33,11 +33,11 @@ const WhatIDo = () => {
             checkUrl: 'https://hourglass.chillspacecafe.com/login'
         },
         {
-            title: 'News Aggregator',
-            imgUrl: news,
-            text: 'A simple news aggregator website to display the current headlines from around the world, taking advantage of NewsAPI',
-            tags: ['HTML', 'CSS', 'JS'],
-            checkUrl: 'http://ourheadlines.herokuapp.com/'
+            title: 'The Handouter',
+            imgUrl: newsletter,
+            text: 'This hand-outer doles out a copy of the newsletter to every subscriber\'s email address powered by nodemailer. ',
+            tags: ['HandleBars', 'NodeJS' ],
+            checkUrl: 'https://the-hand-outer.herokuapp.com/'
         },
         {
             title: 'The Yozznet Project',
@@ -64,9 +64,11 @@ const WhatIDo = () => {
                 <ToggleRight />
             </div>
             <div className='w-three-quarter m-auto'>
-                <h5 className='m-auto mb-20 text-center' style={{ fontSize: '3rem', fontFamily: 'Caveat, cursive', width: 'fit-content', color:'#F2F0F9', borderBottom: '2px solid #F2F0F9' }}>
-                    PROJECTS
-                </h5>
+                <div className="w-150 mx-auto">
+                    <h5 className='m-auto mb-20 text-center' style={{ fontSize: '3rem', fontFamily: 'Caveat, cursive', width: 'fit-content', color:'#F2F0F9', borderBottom: '2px solid #F2F0F9' }}>
+                        PROJECTS
+                    </h5>
+                </div>
                 <div className='d-flex flex-wrap align-items-center justify-content-center'>
                     {whatIDoData.map((whatido, index) => {
                         return (

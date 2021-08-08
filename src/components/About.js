@@ -57,9 +57,11 @@ const About = () =>  {
         <div id='about'>
             <div className='image-of-me position-absolute'></div>
             <div className='w-full m-auto about-padding' style={{ zIndex: 1000 }}>
-                <h2 className='card-title m-auto m-md-0 text-center mt-md-15 text-dark' style={{ width: 'fit-content', borderBottom: '2px solid black' }}>
-                  <span style={{ fontFamily: 'Caveat, cursive' }}>WHO AM I</span> ?
-                </h2>
+                <div className="w-100 mr-md-auto">
+                    <h2 className='card-title m-auto m-md-0 text-center mt-md-15 text-dark' style={{ width: 'fit-content', borderBottom: '2px solid black' }}>
+                      <span style={{ fontFamily: 'Caveat, cursive' }}>WHO AM I</span> ?
+                    </h2>
+                </div>
                 <div className='d-flex'>
                 <p className='text-justify text-dark'>
                   I am Parthiv, a 19 year old living in Kerala. I had a childhood filled with a generous mix of at least four languages. Consequently, when I am not 
@@ -69,9 +71,11 @@ const About = () =>  {
                   happens to be everything.  
                 </p>
                 </div>
-                <h2 className='card-title m-auto m-md-0 mt-md-10 text-dark text-center' style={{ width: 'fit-content', borderBottom: '2px solid black' }}>
-                  <span style={{ fontFamily: 'Caveat, cursive' }}>CODE, SKILLS, AND MORE</span> 
-                </h2>
+                <div className="w-200 mr-md-auto">
+                    <h2 className='card-title m-auto m-md-0 mt-md-10 text-dark text-center' style={{ width: 'fit-content', borderBottom: '2px solid black' }}>
+                      <span style={{ fontFamily: 'Caveat, cursive' }}>CODE, SKILLS, AND MORE</span> 
+                    </h2>
+                </div>
                 <div className='d-flex h-full flex-column flex-md-row flex-wrap m-0 mt-md-20 align-items-center justify-content-start'>
                     {
                         skillsAndMore.map((more, index) => {
