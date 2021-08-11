@@ -2,20 +2,64 @@ import React from 'react';
 
 const Extras = () => {
     return (
-        <div className='dark-love px-20'>
-            <div className="w-250 mx-auto">
-            <h5 className='m-auto mb-20' style={{ fontFamily: 'Caveat, cursive', width: 'fit-content', color:'#F2F0F9', borderBottom: '2px solid #F2F0F9' }}>
-                OF PENS, PENCILS, AND MY LAPTOP
-            </h5>
-            </div>
-            <div className='px-20 row h-half justify-content-center m-auto align-items-center py-20' style={{ width: '70%' }}>
-                <div className='h-100 col-md-3 col-sm-5 d-flex flex-column align-items-center justify-content-center mx-md-10 my-10 p-10 text-center' id='extra-bottom'>
-                    <p><a href='https://themitpost.com/author/parthiv/' target='_blank' rel='noreferrer'>Articles for The Post</a></p>   
+        <div className='w-full'>
+            <div className='bookspeak-hero bg-light h-350'>
+                <div className='hero-overlay h-full'>
+                    <div className='h-full w-md-half w-three-quarter mx-auto d-flex flex-column justify-content-center'>
+                        <h2 className='font-weight-bold m-0 text-white'>
+                            Book Speak
+                        </h2>
+                        <div className='w-md-400 m-0 text-white'>
+                            <h6>
+                                A platform where anyone can suggest their favourite quotes and have them on the website—self made, designed, developed, and maintained.
+                            </h6>
+                        </div>
+                        <p className='m-0 p-5 w-150 text-center' style={{ color: '#3c2097', border: '1px solid #3c2097', borderRadius: '5px' }}>
+                            Launching soon
+                        </p>
+                    </div>
                 </div>
-                <div className='h-100 col-md-3 col-sm-5 d-flex align-items-center justify-content-center mx-md-10 my-10 p-10 text-center' id='extra-bottom'>
-                    <p><a href='https://wearemist.in/profile?author=Parthiv%20Menon' target='_blank' rel='noreferrer'>Writeups for MIST</a></p>   
+            </div>
+            <div className='post-hero bg-dark h-350'>
+                <div className='hero-overlay h-full'>
+                    <div className='h-full w-md-half w-three-quarter mx-auto d-flex flex-column justify-content-center'>
+                        <h2 className='font-weight-bold m-0 text-white'>
+                            The MIT Post
+                        </h2>
+                        <div className='w-md-400 m-0 text-white'>
+                            <h6>
+                                From covering events, writing reports, and churning out creative content to writing professional articles, I have had a chance to do it all at The Post
+                            </h6>
+                        </div>
+                        <a href='https://themitpost.com/author/parthiv/' target='_blank' rel='noreferrer'>
+                            <button className='w-100 p-10 border-0 rounded glass-button' style={{ cursor: 'pointer' }}>
+                                Read now
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
+            {/* probably for later */}
+            {/* <div className='cyber-hero bg-light h-350'>
+                <div className='hero-overlay h-full'>
+                    <div className='h-full w-md-half w-three-quarter mx-auto d-flex flex-column justify-content-center'>
+                        <h2 className='font-weight-bold m-0 text-white'>
+                            CyberManipal
+                        </h2>
+                        <div className='w-md-400 m-0 text-white'>
+                            <h6>
+                                Writing about tech happenings or cybersecurity breaches, attacks, and vulnerabilities around the world leant me a fair amount of idea into how things work in the cyber world.
+                            </h6>
+                        </div>
+                        <a href='https://wearemist.in/news/author/@ParthivMenon' target='_blank' rel='noreferrer'>
+                            <button className='w-100 p-10 border-0 rounded glass-button' style={{ cursor: 'pointer' }}>
+                                Read now
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div> */}
+            {/* probably for later */}
         </div>
     );
 }

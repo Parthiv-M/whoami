@@ -18,6 +18,10 @@ body {
     display: none;
 }
 
+button:active, button:focus {
+    outline: none;
+}
+
 /* customising halfmoon colours */
 :root {
     --primary-color: #3c2097;
@@ -48,7 +52,7 @@ body {
 /* back-image of me */
 
 .image-of-me {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background-image: url('./assets/parthiv.JPG');
     background-repeat: no-repeat;
@@ -56,27 +60,54 @@ body {
     background-position: center;
     background-attachment: fixed;
     z-index: -999;
-    filter: grayscale(100%) blur(15px) opacity(0.7);
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.52756 0.42911999999999995 0.04332 0 0 0.12756 0.82912 0.04332 0 0 0.12756 0.42911999999999995 0.44332 0 0 0 0 0 1 0" /></filter></svg>#filter');
+    -webkit-filter: grayscale(60%);
+            filter: grayscale(60%);
 }
+
+.image-of-me .about-padding {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@supports ((-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))) {
+    .image-of-me .about-padding {
+        -webkit-backdrop-filter: blur(20px);
+                backdrop-filter: blur(20px);
+    }
+} 
 
 @media only screen and (max-width: 800px) {
     .image-of-me {
-        display: none;
+        /* display: none; */
     }
 }
 
 /* skill coin styles */
 
 .skill-coin:hover {
-    animation: rotate 2000ms ease-in-out;
+    -webkit-animation: rotate 2000ms ease-in-out;
+            animation: rotate 2000ms ease-in-out;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(-5deg);
+                transform: rotate(-5deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
 }
 
 @keyframes rotate {
     0% {
-        transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
+                transform: rotate(-5deg);
     }
     100% {
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
     }
 }
 
@@ -87,13 +118,15 @@ body {
 }
 
 .social-link:hover {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
     color: var(--primary-color);
 }
 
 /* about padding */
 
 .about-padding {
+    padding: 32px 160px;
     padding: 2rem 10rem;
 }
 
@@ -107,17 +140,21 @@ body {
 
 .and-others{
     opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 
 .and-others:hover{
     opacity: 1;
-    transform: translateY(-5px);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
     box-shadow: 0px 0px 15px rgba(49, 49, 49, 0.288);
 }
 
 @media only screen and (max-width: 800px){
     .and-others{
         opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     }
     .and-others:hover{
         box-shadow: none;
@@ -133,6 +170,7 @@ body {
 .glass-button {
     border: none;
     color: var(--contrast-color);
+    background-image: -webkit-linear-gradient(left, #3c2097d3, var(--primary-color), var(--primary-color), var(--primary-color), #3c2097d3);
     background-image: linear-gradient(to right, #3c2097d3, var(--primary-color), var(--primary-color), var(--primary-color), #3c2097d3);
 }
 
@@ -179,26 +217,39 @@ body {
 
 /* extras styles */
 
-#extra-bottom{
-    border-top: 1px solid var(--primary-color);
-    font-size: 1.9rem;
-    font-weight: bolder;
-    background-color: #3c20978e;
-    border-radius: 10px;
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
-#extra-bottom p a{
-    color: var(--contrast-color);
+@supports ((-webkit-backdrop-filter: blur(18px)) or (backdrop-filter: blur(18px))) {
+    .hero-overlay {
+        background-color: rgb(0, 0, 0, 0.7);
+        -webkit-backdrop-filter: blur(18px);
+                backdrop-filter: blur(18px);
+    }
 }
 
-#extra-bottom p:hover{
-    transition-duration: 800ms;
-    transform: translateY(-5px);
+.bookspeak-hero {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX8fKpyRqYdMwkbJszKqt1mPtQCGeLZD3EDIQdf2u9B0UljbX0xAGzZss06NPUURvWZF8&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+}
+
+.post-hero {
+    background-image: url('./assets/thepostback.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.cyber-hero {
+    background-image: url('./assets/cyberback.png');
+    background-size: cover;
+    background-position: center;
 }
 
 /* footer styles */
 
 .grad-back {
+    background-image: -webkit-linear-gradient(left, rgba(214, 214, 214, 0.9), rgb(247, 247, 247), rgb(247, 247, 247), rgb(228, 228, 228, 0.9));
     background-image: linear-gradient(to right, rgba(214, 214, 214, 0.9), rgb(247, 247, 247), rgb(247, 247, 247), rgb(228, 228, 228, 0.9));
 }
-

@@ -69,10 +69,10 @@ const WhatIDo = () => {
                         PROJECTS
                     </h5>
                 </div>
-                <div className='d-flex flex-wrap align-items-center justify-content-center'>
+                <div className='row align-items-center justify-content-center w-full'>
                     {whatIDoData.map((whatido, index) => {
                         return (
-                            <div key={index} className='w-250 h-400 mw-full mx-5'>
+                            <div key={index} className='col-md-3 col-10 h-400 mx-5'>
                                 <div className='p-0 text-white border border-0 pb-5 text-center'>
                                     <img loading='lazy' className='img-fluid rounded-top w-full h-150' alt={whatido.title} src={whatido.imgUrl}/>
                                     <div className='content mt-10'>
