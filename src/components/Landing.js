@@ -66,7 +66,6 @@ const Landing = () => {
                   content="Parthiv Menon—impossible is just an opinion"
                 />
             </Helmet>
-            <canvas className='position-absolute w-full h-full' id='canvas' style={{ top: 0 }}></canvas>
             <div className='h-full w-md-half w-full d-flex flex-column justify-content-center align-items-md-start align-items-center'>
                 <div className='d-flex flex-md-row align-items-center flex-column-reverse'>
                     <h1 className='font-weight-bold' style={{ borderBottom: '2px solid #3c2097' }}>
@@ -79,11 +78,12 @@ const Landing = () => {
                     <span data-toggle='tooltip' data-title='Oops, no dark mode toggle!' data-placement='bottom'><ToggleLeft size={40} className='pb-5 mx-10' color='#3c2097'/></span>
                 </div>
             </div>
-            <div className='h-100 w-full d-flex align-items-center pr-md-20 justify-content-md-end justify-content-center' id="social-bar">
+            <div className='h-100 w-full d-flex align-items-center pr-md-20 justify-content-md-end justify-content-center' id='social-bar' style={{ zIndex: '100' }}>
                 <a href='https://www.instagram.com/_.parthiv_/' target='_blank' rel='noreferrer'><Instagram size={30} className='mx-15 social-link'/></a>
                 <a href='https://github.com/Parthiv-M' target='_blank' rel='noreferrer'><GitHub size={30} className='mx-15 social-link'/></a>
                 <a href='https://www.linkedin.com/in/parthivmenon/' target='_blank' rel='noreferrer'><Linkedin size={30} className='mx-15 social-link'/></a>
             </div>
+            <canvas className='position-absolute w-full h-full' id='canvas' style={{ top: 0 }}></canvas>
         </div>
     );
 }

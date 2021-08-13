@@ -39,8 +39,7 @@ const Extras = () => {
                     </div>
                 </div>
             </div>
-            {/* probably for later */}
-            {/* <div className='cyber-hero bg-light h-350'>
+            <div className='cyber-hero bg-light h-350'>
                 <div className='hero-overlay h-full'>
                     <div className='h-full w-md-half w-three-quarter mx-auto d-flex flex-column justify-content-center'>
                         <h2 className='font-weight-bold m-0 text-white'>
@@ -48,7 +47,7 @@ const Extras = () => {
                         </h2>
                         <div className='w-md-400 m-0 text-white'>
                             <h6>
-                                Writing about tech happenings or cybersecurity breaches, attacks, and vulnerabilities around the world leant me a fair amount of idea into how things work in the cyber world.
+                                Writing about tech happenings or cybersecurity breaches, attacks, and vulnerabilities around the world lent me a fair amount of idea into how things work in the cyber world.
                             </h6>
                         </div>
                         <a href='https://wearemist.in/news/author/@ParthivMenon' target='_blank' rel='noreferrer'>
@@ -58,8 +57,7 @@ const Extras = () => {
                         </a>
                     </div>
                 </div>
-            </div> */}
-            {/* probably for later */}
+            </div>
         </div>
     );
 }

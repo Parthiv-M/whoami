@@ -56,7 +56,7 @@ const About = () =>  {
     return (
         <div id='about'>
             <div className='image-of-me'>
-                <div className='w-full m-auto about-padding'>
+                <div className='w-full h-full m-auto about-padding'>
                     <div className="w-100 mr-md-auto">
                         <h2 className='card-title m-auto m-md-0 text-center mt-md-15 text-white' style={{ width: 'fit-content', borderBottom: '2px solid white' }}>
                           <span style={{ fontFamily: 'Caveat, cursive' }}>WHO AM I</span> ?
@@ -65,10 +65,10 @@ const About = () =>  {
                     <div className='d-flex'>
                     <p className='text-justify text-dark'>
                       I am Parthiv, a 19 year old living in Kerala. I had a childhood filled with a generous mix of at least four languages. Consequently, when I am not 
-                      immersed in some book or the other, I queitly muse about the plethora of reasons that make people tick. I absolutely love traveling—the journey being more 
+                      immersed in some book or the other, I quietly muse about the plethora of reasons that make people tick. I absolutely love traveling—the journey being more 
                       important than the destination. I'm passionate about anything that involves creativity and am enthusiastic about working on any project or idea that can get 
                       me thinking. A big fan of Sherlock Holmes, I am a keen observer and a fast learner, willing to pick up anything that interests me, which, more often than not, 
-                      happens to be everything.  
+                      happens to be everything. Also, I love puns...especially ones that are pun-ishingly bad. 
                     </p>
                     </div>
                     <div className='w-200 mr-md-auto'>
