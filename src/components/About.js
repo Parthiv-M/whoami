@@ -55,7 +55,7 @@ const About = () =>  {
 
     return (
         <div id='about'>
-            <div className='image-of-me'>
+            <div className='image-of-me w-full'>
                 <div className='w-full h-full m-auto about-padding'>
                     <div className="w-100 mr-md-auto">
                         <h2 className='card-title m-auto m-md-0 text-center mt-md-15 text-white' style={{ width: 'fit-content', borderBottom: '2px solid white' }}>

@@ -11,21 +11,38 @@ body {
     font-family: 'Overpass', sans-serif;
     overflow-x: hidden;
     -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;
-}
-
-*::-webkit-scrollbar {
-    display: none;
-}
-
-button:active, button:focus {
-    outline: none;
 }
 
 /* customising halfmoon colours */
 :root {
     --primary-color: #3c2097;
     --contrast-color: #F2F0F9; 
+}
+
+/* Customization for scrollbar */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) rgb(0, 0, 0);
+}
+
+/* Works on Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+button:active, button:focus {
+    outline: none;
 }
 
 /* customising base page */
@@ -66,11 +83,13 @@ button:active, button:focus {
 }
 
 .image-of-me .about-padding {
+    min-height: 100vh;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
 @supports ((-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))) {
     .image-of-me .about-padding {
+        min-height: 100vh;
         -webkit-backdrop-filter: blur(20px);
                 backdrop-filter: blur(20px);
     }

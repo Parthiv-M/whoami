@@ -79,18 +79,18 @@ const WhatIDo = () => {
                                         <h2 className='font-size-18 text-center content-title m-0 text-left pl-10'>
                                             {whatido.title}
                                         </h2>
-                                        <div className='d-flex flex-wrap h-50 justify-content-center tags-div'>
-                                            <div className='px-5 pt-5 pt-md-0 m-5' style={{ width: 'fit-content', height: 30, border: '2px solid #3c2097', borderRadius: '10px' }}>
-                                                <span className='font-size-12'>{whatido.tags[0]}</span>
+                                        <div className='d-flex flex-wrap h-50 mb-5 justify-content-center tags-div'>
+                                            <div className='mx-5' style={{ width: 'fit-content' }}>
+                                                <p className='font-size-12 p-5' style={{ border: '2px solid #3c2097', borderRadius: '10px' }}>{whatido.tags[0]}</p>
                                             </div>
-                                            <div className='px-5 pt-5 pt-md-0 m-5' style={{ width: 'fit-content', height: 30, border: '2px solid #3c2097', borderRadius: '10px' }}>
-                                                <span className='font-size-12'>{whatido.tags[1]}</span>
+                                            <div className='mx-5' style={{ width: 'fit-content'}}>
+                                                <p className='font-size-12 p-5' style={{ border: '2px solid #3c2097', borderRadius: '10px' }}>{whatido.tags[1]}</p>
                                             </div>
                                             {
                                             whatido.tags[2] 
                                             ? 
-                                            <div className='px-5 pt-5 pt-md-0 m-5' style={{ width: 'fit-content', height: 30, border: '2px solid #3c2097', borderRadius: '10px' }}>
-                                                <span className='font-size-12'>{whatido.tags[2]}</span>
+                                            <div className='mx-5' style={{ width: 'fit-content' }}>
+                                                <p className='font-size-12 p-5' style={{ border: '2px solid #3c2097', borderRadius: '10px' }}>{whatido.tags[2]}</p>
                                             </div> 
                                             : <> </>
                                             }

@@ -73,7 +73,7 @@ const Landing = () => {
                     </h1>
                     <p className='text-muted d-none' id='flying'>Flying a bit higher</p>
                 </div>
-                <div className='d-flex align-items-center justify-content-md-start justify-content-center' style={{ marginTop: '-20px' }}>
+                <div className='d-flex align-items-center justify-content-md-start justify-content-center' style={{ marginTop: '-20px', zIndex: '100' }}>
                     <h6 className='text-muted font-weight-lighter'>I LOVE LIGHT MODE</h6>
                     <span data-toggle='tooltip' data-title='Oops, no dark mode toggle!' data-placement='bottom'><ToggleLeft size={40} className='pb-5 mx-10' color='#3c2097'/></span>
                 </div>
