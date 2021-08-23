@@ -21,9 +21,9 @@ const WhatIDo = () => {
         {
             title: 'Research Project',
             imgUrl: research,
-            text: 'A research project based on stock prices and their correlation to real world news, thus forming a stock portfolio',
+            text: 'Fourth author of a research paper, based on stocks and events, published in IEEE Xplore',
             tags: ['Python', 'BeautifulSoup'],
-            checkUrl: ''
+            checkUrl: 'https://ieeexplore.ieee.org/document/9505602/'
         },
         {
             title: 'ChillSpace Hourglass',
