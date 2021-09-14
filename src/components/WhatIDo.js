@@ -51,7 +51,7 @@ const WhatIDo = () => {
             imgUrl: eCell,
             text: 'A website for the E-Cell of MIT, a non-profit organisation for promoting entrepreneurship, run entirely by students',
             tags: ['HTML', 'CSS', 'JS'],
-            checkUrl: ''
+            checkUrl: 'https://ecellmit.com'
         },
     ];
 

@@ -14,9 +14,11 @@ const Extras = () => {
                                 A platform where anyone can suggest their favourite quotes and have them on the website—self made, designed, developed, and maintained.
                             </h6>
                         </div>
-                        <p className='m-0 p-5 w-150 text-center' style={{ color: '#3c2097', border: '1px solid #3c2097', borderRadius: '5px' }}>
-                            Launching soon
-                        </p>
+                        <a href='https://bookspeak.parthivmenon.com' target='_blank' rel='noreferrer'>
+                            <button className='w-100 p-10 border-0 rounded glass-button' style={{ cursor: 'pointer' }}>
+                                Check now
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
