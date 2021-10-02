@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import '../App.css';
 import { ToggleLeft } from 'react-feather';
-import { Instagram, GitHub, Linkedin } from 'react-feather';
+import { Instagram, GitHub, Linkedin, Copy, Check } from 'react-feather';
 import ConfettiGenerator from 'confetti-js';
 
 const Landing = () => {
@@ -25,6 +25,23 @@ const Landing = () => {
         confetti.render();
         return () => confetti.clear();
     }, []);
+
+    const copyToClipboard = () => {
+      let copy = document.getElementById("copy");
+      navigator.clipboard.writeText(copy.innerHTML);
+      document.querySelector(".dash").style.display = "none";
+      copy.innerHTML = "Copied!";
+      document.querySelector(".copy-icon").style.display = "none";
+      document.querySelector(".tick-icon").classList.remove("d-none");
+      document.querySelector(".tick-icon").classList.add("d-block");
+      setTimeout(() => {
+        copy.innerHTML = "npm i -g cli-parthiv";
+        document.querySelector(".dash").style.display = "block";
+        document.querySelector(".copy-icon").style.display = "block";
+        document.querySelector(".tick-icon").classList.remove("d-block");
+        document.querySelector(".tick-icon").classList.add("d-none");
+      }, 2000);
+    }
 
     return (
         <div className='h-full d-flex flex-column justify-content-center align-items-center back-image'>
@@ -67,11 +84,21 @@ const Landing = () => {
                 />
             </Helmet>
             <div className='h-full w-md-half w-full d-flex flex-column justify-content-center align-items-md-start align-items-center'>
-                <div className='d-flex flex-md-row align-items-center flex-column-reverse'>
+                <div className='d-flex align-items-center flex-column'>
+                    <div className="w-full d-flex justify-content-between align-items-center h-50 bg-dark cli px-5">
+                      <div className="cli-text d-flex align-items-center">
+                        <span className="arrow text-white mx-5 pt-5">{"> "}</span>
+                        <p className="mx-5 text-white" id="copy">npm i -g cli-parthiv</p>
+                        <span className="dash">{"_"}</span>
+                      </div>
+                      <div className="text-white mr-5 pt-5 d-md-block d-none" style={{ cursor: "pointer" }} onClick={copyToClipboard}>
+                        <span className="copy-icon"><Copy /></span>
+                        <span className="tick-icon d-none"><Check color="#3c2097"/></span>
+                      </div>
+                    </div>
                     <h1 className='font-weight-bold' style={{ borderBottom: '2px solid #3c2097' }}>
                         Parthiv Menon
                     </h1>
-                    <p className='text-muted d-none' id='flying'>Flying a bit higher</p>
                 </div>
                 <div className='d-flex align-items-center justify-content-md-start justify-content-center' style={{ marginTop: '-20px', zIndex: '100' }}>
                     <h6 className='text-muted font-weight-lighter'>I LOVE LIGHT MODE</h6>
