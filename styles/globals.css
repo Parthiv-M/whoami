@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+button:focus {
+  outline: none;
+}
+
+.spline {
+    font-family: 'Spline Sans', sans-serif;
+}
+
+.lob {
+    font-family: 'Lobster', cursive;
+}
+
+.iam {
+    font-size: 20rem;
+    letter-spacing: 6rem;
+}
+
+/* customise scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #22c55e;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+.pass-header {
+  height: 70vh;
+}
+
+.web-card {
+  min-height: 30rem;
+}
+
+@media only screen and (max-width: 814px) {
+   .web-card {
+     min-height: 23rem;
+   } 
+}
