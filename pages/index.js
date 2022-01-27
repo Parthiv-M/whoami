@@ -6,7 +6,7 @@ import SkillCard from '../components/SkillCard'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen overflow-x-hidden">
+    <div className="flex flex-col items-center justify-center min-h-screen overflow-x-hidden md:px-8">
       <Head>
         <title>Parthiv Menon</title>
         <link rel="icon" href="/favicon.ico" />
@@ -82,12 +82,12 @@ export default function Home() {
       </div>
 
       <div className="w-screen min-h-screen bg-neutral-900">
-        <div className="container my-12 p-4 mx-auto flex md:flex-row flex-col justify-center items-center">
-          <div className="md:w-1/3 w-full text-center md:px-0 px-8">
-            <h2 className="md:text-7xl text-5xl text-left spline font-bold text-white"><span className="text-green-400">Who</span> Am I?</h2>
+        <div className="container my-12 p-4 mx-auto flex md:flex-row flex-col md:justify-center items-start md:items-center">
+          <div className="md:w-1/3 w-full text-left md:px-0 px-1">
+            <h2 className="md:text-7xl text-5xl spline font-bold text-white"><span className="text-green-400">Who</span> Am I?</h2>
           </div>
           <div className="md:w-2/3 w-full md:my-0 my-4">
-            <p className="px-8 text-xl text-gray-100 spline">
+            <p className="md:px-8 px-2 md:text-xl text-md text-gray-100 spline">
               I am Parthiv, a 20 year old living in Kerala. I had a childhood filled with a generous mix of at least four languages. Consequently, when I 
               am not immersed in some book or the other, I muse quietly about the plethora of reasons that make people tick. I absolutely love traveling—the 
               journey being more important than the destination. I'm passionate about anything that involves creativity and am enthusiastic about working on 
@@ -96,32 +96,32 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col md:px-0 px-4 py-4">
           <div className="container md:my-4 md:p-4 mx-auto flex md:flex-row flex-col justify-center items-center md:order-1 order-2">
-            <SkillCard icon="html5" isCustom={false} name="Javascript" text="" mdorder={1} order={1}/>
-            <SkillCard icon="css3" isCustom={false} name="HTML" text="" mdorder={2} order={2}/>
-            <SkillCard icon="javascript" isCustom={false} name="CSS" text="" mdorder={3} order={3}/>
+            <SkillCard icon="html5" isCustom={false} name="Javascript" text="Markup with HTML was probably one of the first tech things I ever learnt" mdorder={1} order={1}/>
+            <SkillCard icon="css3" isCustom={false} name="HTML" text="Hand in hand with HTML, I learnt the art of styling my markup with CSS" mdorder={2} order={2}/>
+            <SkillCard icon="javascript" isCustom={false} name="CSS" text="Interactivity, more complex code, and a lot of fun came with learning JavaScript" mdorder={3} order={3}/>
           </div>
           <div className="container md:my-4 md:p-4 mx-auto flex md:flex-row flex-col justify-center items-center md:order-2 order-1">
-            <SkillCard icon="java" isCustom={false} name="Java" text="" mdorder={1} order={2}/>
-            <div className="w-96 py-8 flex justify-center items-center md:order-2 order-1">
-              <div className="text-6xl spline font-bold">
+            <SkillCard icon="java" isCustom={false} name="Java" text="Java is what I prefer when I need to code at times when I am not doing development work" mdorder={1} order={2}/>
+            <div className="md:w-96 w-full py-8 px-2 flex md:justify-center justify-start items-center md:order-2 order-1">
+              <div className="md:text-6xl text-4xl spline font-bold">
                 <span className="text-white">My</span> <span className="text-green-400">Skills</span>
               </div>
             </div>
-            <SkillCard icon="python" isCustom={false} name="Python" text="" mdorder={3} order={3}/>
+            <SkillCard icon="python" isCustom={false} name="Python" text="Forays into data science, research and scripting made me failiar with Python" mdorder={3} order={3}/>
           </div>
           <div className="container md:my-4 md:p-4 mx-auto flex md:flex-row flex-col justify-center items-center md:order-3 order-3">
-            <SkillCard icon="nodejs" isCustom={false} name="NodeJS" text="" mdorder={1} order={1}/>
-            <SkillCard iconPath="/assets/icons/ux.svg" isCustom={true} name="UI/UX" text="" mdorder={2} order={2}/>
-            <SkillCard iconPath="/assets/icons/flutter.svg" isCustom={true} name="Flutter" text="" mdorder={3} order={3}/>  
+            <SkillCard icon="nodejs" isCustom={false} name="NodeJS" text="NodeJS became the go-to for almost any project that involved Javascript" mdorder={1} order={1}/>
+            <SkillCard iconPath="/assets/icons/ux.svg" isCustom={true} name="UI/UX" text="Clean design and an aesthetic outlook towards everything I did helped hone my UI/UX skills" mdorder={2} order={2}/>
+            <SkillCard iconPath="/assets/icons/flutter.svg" isCustom={true} name="Flutter" text="Cross platform app development became easier with Flutter and Dart to help me" mdorder={3} order={3}/>  
           </div>
         </div>
       </div>
 
       <div className="bg-white min-h-screen w-screen">
         <div className="container my-12 p-4 mx-auto">
-          <h2 className="md:text-7xl text-5xl md:text-left text-center spline font-bold text-neutral-900">My <span className="text-green-400">Projects</span></h2>
+          <h2 className="md:text-7xl text-4xl text-left spline font-bold text-neutral-900">My <span className="text-green-400">Projects</span></h2>
           <div className="container w-full grid md:grid-cols-3 grid-cols-1 gap-2 my-8">
             <ProjectCard 
               image="https://ik.imagekit.io/vk9h2knt4xe/Projects/seashell_QiZoxZffQ?updatedAt=1641928871296"
@@ -210,7 +210,7 @@ export default function Home() {
       <div className="bg-black w-screen">
         <div className="container md:w-1/2 my-12 p-4 mx-auto flex flex-col justify-center items-center">
           <h5 className="text-white spline text-2xl text-center font-bold md:px-0 px-2">When I am not making puns, I work on my other passions</h5>
-          <div className="grid md:grid-cols-4 grid-cols-2 gap-3 w-3/4 h-2/3 my-4 py-4">
+          <div className="grid md:grid-cols-4 grid-cols-2 gap-3 md:w-3/4 w-full h-2/3 my-4 py-4 md:px-0 px-2">
             <Link href="/websites">
               <button className="bg-transparent py-2 text-cyan-500 border-2 border-cyan-500 rounded-lg spline font-bold text-2xl hover:bg-cyan-500 hover:text-white">Websites</button>
             </Link>
@@ -229,26 +229,26 @@ export default function Home() {
 
       <div className="w-screen min-h-screen bg-neutral-900">
         <div className="container my-12 p-4 mx-auto">
-          <h2 className="md:text-7xl text-5xl md:text-left text-center spline font-bold text-white">My <span className="text-green-400">Certificates</span></h2>
+          <h2 className="md:text-7xl text-4xl text-left spline font-bold text-white">My <span className="text-green-400">Certificates</span></h2>
           <div className="container grid md:grid-cols-2 grid-cols-1 gap-3 w-full my-4">
               <div className="w-full grayscale hover:grayscale-0">
-                <Image src="https://ik.imagekit.io/vk9h2knt4xe/Websites/telangana_N_k_QSymC?updatedAt=1641926648152" height={200} width={300} layout="responsive" />
+                <Image src="https://ik.imagekit.io/vk9h2knt4xe/Certificates/telangana_N_k_QSymC" height={200} width={300} layout="responsive" />
               </div>
               <div className="flex flex-col">
                 <div className="w-full grayscale hover:grayscale-0">
-                  <Image src="https://ik.imagekit.io/vk9h2knt4xe/Websites/vizag_U9rvBQ8KL?updatedAt=1641926645123" height={200} width={300} layout="responsive" />
+                  <Image src="https://ik.imagekit.io/vk9h2knt4xe/Certificates/vizag_U9rvBQ8KL" height={200} width={300} layout="responsive" />
                 </div>
               </div>
           </div>
           <div className="container grid md:grid-cols-2 grid-cols-1 gap-3 w-full my-4">
             <div className="flex flex-col">
               <div className="w-full grayscale hover:grayscale-0">
-                <Image src="https://ik.imagekit.io/vk9h2knt4xe/Websites/ml_eegA49gYnt6F?updatedAt=1641926653429" height={200} width={300} layout="responsive" />
+                <Image src="https://ik.imagekit.io/vk9h2knt4xe/Certificates/ml_eegA49gYnt6F?updatedAt=1641926653429" height={200} width={300} layout="responsive" />
               </div>
             </div>
             <div className="flex flex-col">
               <div className="w-full grayscale hover:grayscale-0">
-                <Image src="https://ik.imagekit.io/vk9h2knt4xe/Websites/manipalhack_fB_3FDPwz?updatedAt=1641926648703" height={200} width={300} layout="responsive" />
+                <Image src="https://ik.imagekit.io/vk9h2knt4xe/Certificates/manipalhack_fB_3FDPwz?updatedAt=1641926648703" height={200} width={300} layout="responsive" />
               </div>
             </div>
           </div>

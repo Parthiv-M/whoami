@@ -17,16 +17,16 @@ export default function Websites() {
         <div className="h-52 w-52 md:block hidden absolute top-40 left-40 rotate-45 rounded-full bg-blue-700 opacity-80 hover:animate-ping"></div>
         <div className="h-16 w-16 absolute top-40 left-40 mx-32 rotate-45 rounded-full bg-yellow-500 animate-bounce"></div>
         <div className="w-full flex flex-col md:justify-end justify-center md:p-20 p-6 z-20">
-            <h2 className="text-white spline font-bold text-7xl">
+            <h2 className="text-white spline font-bold md:text-7xl text-5xl">
                 Websites
             </h2>
-            <p className="text-white text-xl">I am a <span className="text-pink-500">Full Stack Developer</span> and I love the art of putting together websites from scratch</p>
+            <p className="text-white md:text-xl text-lg">I am a <span className="text-pink-500">Full Stack Developer</span> and I love the art of putting together websites from scratch</p>
         </div>
       </main>
 
       <div className="bg-gray-200 w-full py-16 md:px-20 px-8">
-        <h4 className="spline text-3xl text-gray-500 font-bold">Tech Stack</h4>
-        <div className="flex flex-wrap my-3">
+        <h4 className="spline text-3xl text-gray-500 font-bold md:text-left text-center">Tech Stack</h4>
+        <div className="flex flex-wrap my-3 md:justify-start justify-center">
           {
             [
               {icon: "html5", isCustom: false}, 
@@ -41,7 +41,7 @@ export default function Websites() {
               return (
                 stack.isCustom 
                 ?
-                <div className="w-12 mx-2 md:my-0 my-2 cursor-pointer">
+                <div className="w-12 mx-2 md:my-0 my-2 cursor-pointer" key={index}>
                   <img src={stack.icon} /> 
                 </div>
                 :
@@ -52,7 +52,10 @@ export default function Websites() {
         </div>
       </div>
 
-      <div className="w-full md:px-20 px-8 py-8">
+      <div className="w-full md:px-20 px-8 pb-8">
+        <div className="mx-auto my-8 py-8">
+          <p className="text-gray-400 text-center md:text-xl">These are some of the websites I have built, some alone and some as part of a team</p>
+        </div>
         <div className="container mx-auto w-full grid md:grid-cols-3 grid-cols-1 gap-2">
           <WebCard 
             name="News Website"

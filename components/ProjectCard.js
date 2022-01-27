@@ -5,7 +5,7 @@ export default function ProjectCard (props) {
     return (
       <Link href={props.link}>
         <div className="w-full flex items-center bg-gray-100 cursor-pointer hover:bg-transparent p-2 rounded-md">
-          <div className="w-1/3 hover:scale-95">
+          <div className="w-1/3 hover:scale-95 self-start">
             <Image className="rounded-t-lg" src={props.image} height={240} width={400} layout="responsive" />
             <div className="w-full md:h-20 h-14 bg-gray-900 rounded-b-lg flex items-center justify-center">
               <i className={`lni lni-${props.icon} text-3xl text-white`}></i>

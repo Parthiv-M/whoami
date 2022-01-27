@@ -20,6 +20,34 @@ const artworks = [
     "https://ik.imagekit.io/vk9h2knt4xe/Artwork/IMG_20190805_104018_592_sjardco23tl.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642111278911"
 ]
 
+const socialData = [
+    {
+        link: "mailto:parthivmenon01@gmail.com",
+        icon: "envelope"
+    },
+    {
+        link: "https://instagram.com/_.parthiv_",
+        icon: "instagram-original"
+    },
+    {
+        link: "https://github.com/Parthiv-M",
+        icon: "github-original"
+    },
+    {
+        link: "https://linkedin.com/in/parthivmenon",
+        icon: "linkedin-original"
+    },
+    {
+        link: "https://dribbble.com/theProton",
+        icon: "dribbble"
+    },
+    {
+        link: "https://discordapp.com/users/446948320326451201/",
+        icon: "discord"
+    }
+]
+
 export {
-    artworks
+    artworks,
+    socialData
 }
