@@ -4,7 +4,16 @@ import Link from 'next/link'
 import ProjectCard from '../components/ProjectCard'
 import SkillCard from '../components/SkillCard'
 
+import { motion } from "framer-motion"
+
 export default function Home() {
+
+  const variants = {
+    hidden: { opacity: 0, x: 0, y: 200 },
+    enter: { opacity: 1, x: 0, y: 0 },
+    exit: { opacity: 0, x: 0, y: -100 },
+  }
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen overflow-x-hidden md:px-8">
       <Head>
@@ -12,7 +21,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="w-full min-h-screen flex justify-center items-center">
+      <motion.main 
+        initial="hidden"
+        animate="enter"
+        exit="exit"
+        variants={variants}
+        transition={{ type: 'spring' }}
+        className="w-full min-h-screen flex justify-center items-center"
+      >
         <div className="w-4/5 h-96 bg-gray-100 flex md:flex-row flex-col md:justify-between justify-end items-center md:px-20 px-12 md:py-14 py-20">
           <div className="md:flex hidden z-20">
             <div className="flex flex-col mx-4">
@@ -74,7 +90,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </main>
+      </motion.main>
       
       <div className="h-40 bg-black w-screen flex justify-center items-center">
         <i className="lni lni-basketball text-white mx-1 text-2xl animate-bounce"></i>

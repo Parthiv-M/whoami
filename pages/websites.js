@@ -2,7 +2,16 @@ import Head from 'next/head'
 
 import WebCard from "./../components/WebCard"
 
+import { motion } from "framer-motion"
+
 export default function Websites() {
+  
+  const variants = {
+    hidden: { opacity: 0, x: -200, y: 0 },
+    enter: { opacity: 1, x: 0, y: 0 },
+    exit: { opacity: 0, x: 0, y: -100 },
+  }
+
   return (
     <div className="w-screen flex flex-col items-center min-h-screen overflow-x-hidden">
       <Head>
@@ -10,7 +19,13 @@ export default function Websites() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="w-screen flex items-end bg-gray-900 pass-header">
+      <motion.main
+        initial="hidden"
+        animate="enter"
+        exit="exit"
+        variants={variants} 
+        className="w-screen flex items-end bg-gray-900 pass-header"
+      >
         <div className="h-96 w-96 md:block hidden absolute top-10 -m-32 rotate-45 rounded-b-xl bg-purple-500 opacity-20"></div>
         <div className="h-96 w-52 absolute top-20 md:-m-32 -m-16 md:right-0 rotate-45 rounded-xl bg-red-500 opacity-70"></div>
         <div className="h-96 w-52 absolute top-40 md:-m-32 -m-16 md:right-0 rotate-45 rounded-xl bg-orange-400 opacity-10"></div>
@@ -22,7 +37,7 @@ export default function Websites() {
             </h2>
             <p className="text-white md:text-xl text-lg">I am a <span className="text-pink-500">Full Stack Developer</span> and I love the art of putting together websites from scratch</p>
         </div>
-      </main>
+      </motion.main>
 
       <div className="bg-gray-200 w-full py-16 md:px-20 px-8">
         <h4 className="spline text-3xl text-gray-500 font-bold md:text-left text-center">Tech Stack</h4>

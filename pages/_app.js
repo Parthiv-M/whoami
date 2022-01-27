@@ -2,6 +2,8 @@ import '../styles/globals.css'
 import Head from "next/head";
 import Footer from '../components/Footer';
 
+import { AnimatePresence } from 'framer-motion'
+
 function MyApp({ Component, pageProps }) {
   return (
     <div>
@@ -11,7 +13,13 @@ function MyApp({ Component, pageProps }) {
         <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;700&family=Lobster&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css" /> 
       </Head>
-      <Component {...pageProps} />
+      <AnimatePresence
+        exitBeforeEnter
+        initial={false}
+        onExitComplete={() => window.scrollTo(0, 0)}
+      >
+        <Component {...pageProps} />
+      </AnimatePresence>
       <Footer />
     </div>
   )
