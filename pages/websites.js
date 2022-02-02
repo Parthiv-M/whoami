@@ -35,7 +35,7 @@ export default function Websites() {
             <h2 className="text-white spline font-bold md:text-7xl text-5xl">
                 Websites
             </h2>
-            <p className="text-white md:text-xl text-lg">I am a <span className="text-pink-500">Full Stack Developer</span> and I love the art of putting together websites from scratch</p>
+            <p className="text-white md:text-xl text-lg">I am a <span className="text-cyan-400">Full Stack Developer</span> and I love the art of putting together websites from scratch</p>
         </div>
       </motion.main>
 
@@ -56,11 +56,11 @@ export default function Websites() {
               return (
                 stack.isCustom 
                 ?
-                <div className="w-12 mx-2 md:my-0 my-2 cursor-pointer" key={index}>
+                <div className="w-12 mx-2 md:my-0 my-2 cursor-pointer hover:scale-105" key={index}>
                   <img src={stack.icon} /> 
                 </div>
                 :
-                <i key={index} className={`lni lni-${stack.icon} text-5xl mx-2 md:my-0 my-2 cursor-pointer`}></i>
+                <i key={index} className={`lni lni-${stack.icon} text-5xl mx-2 md:my-0 my-2 cursor-pointer hover:scale-105`}></i>
               )
             })
           }
@@ -69,7 +69,7 @@ export default function Websites() {
 
       <div className="w-full md:px-20 px-8 pb-8">
         <div className="mx-auto my-8 py-8">
-          <p className="text-gray-400 text-center md:text-xl">These are some of the websites I have built, some alone and some as part of a team</p>
+          <p className="text-gray-400 text-center md:text-xl">These are websites I have built, some alone and some as part of a team</p>
         </div>
         <div className="container mx-auto w-full grid md:grid-cols-3 grid-cols-1 gap-2">
           <WebCard 

@@ -36,7 +36,7 @@ export default function Artworks() {
             <h2 className="text-neutral-900 spline font-bold md:text-center text-left md:text-7xl text-5xl">
                 Artworks
             </h2>
-            <p className="text-neutral-600 md:text-xl text-lg md:text-center text-left">I am an <span className="text-orange-500">art enthusiast</span> and love sketching, painting and doodling</p>
+            <p className="text-neutral-600 md:text-xl text-lg md:text-center text-left">I am an <span className="text-pink-500">art enthusiast</span> and love sketching, painting and doodling</p>
         </div>
       </motion.main>
 

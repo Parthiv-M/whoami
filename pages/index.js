@@ -198,7 +198,7 @@ export default function Home() {
                     })
                 }
               </div>
-              <h6 className="text-neutral-800 text-xl">
+              <h6 className="text-neutral-800 md:text-xl text-md">
                 I am the fourth author of the research paper titled <strong> Building a Calendar of Events Database by Analyzing Financial Spikes</strong>. It dealt with <em>events</em>, 
                 defined as pieces of news that triggered a change in stock prices. The objective of my portion of the whole project was to collect relevant news 
                 data from multiple news websites, clean the data, and create a usable database out of it. I also performed sentiment analysis on the collected data 
