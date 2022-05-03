@@ -125,7 +125,7 @@ export default function Home() {
                 <span className="text-white">My</span> <span className="text-green-400">Skills</span>
               </div>
             </div>
-            <SkillCard icon="python" isCustom={false} name="Python" text="Forays into data science, research and scripting made me failiar with Python" mdorder={3} order={3}/>
+            <SkillCard icon="python" isCustom={false} name="Python" text="Forays into data science, research and scripting made me familiar with Python" mdorder={3} order={3}/>
           </div>
           <div className="container md:my-4 md:p-4 mx-auto flex md:flex-row flex-col justify-center items-center md:order-3 order-3">
             <SkillCard icon="nodejs" isCustom={false} name="NodeJS" text="NodeJS became the go-to for almost any project that involved Javascript" mdorder={1} order={1}/>
