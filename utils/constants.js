@@ -1,4 +1,5 @@
 const artworks = [
+    "https://ik.imagekit.io/vk9h2knt4xe/Artwork/Snapchat-652623745-01_pHMvJ2oDb.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1655311197338",
     "https://ik.imagekit.io/vk9h2knt4xe/Artwork/IMG_20211130_195628_361_JI6AWXBkFty.jpg",
     "https://ik.imagekit.io/vk9h2knt4xe/Artwork/IMG_20211015_174154_760_ag4jzorT4cIu.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642111291955",
     "https://ik.imagekit.io/vk9h2knt4xe/Artwork/IMG_20211015_174154_745_EMa_ZrxgFmT.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642111291389",
